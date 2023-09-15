@@ -1,41 +1,67 @@
 'use strict'
 
-const contatos = [
+const perfis = [
 {
-    nome: 'Jerome bueno',
-    mensagem: 'Posso realizar o pagamento por...',
-    nome2: 'João Paulo',
-    imagem: 'boneco.jfif',
-    tempo: 'Há 30 minutos'
+    imagem: "./img/boneco.jfif",
+    nome: "jerome Bueno",
+    mensagem: "posso realizar o pagamento por...",
+    nome2: "João Paulo",
+    notificacao: "1",
+    tempo: "30 minutos"
 },
 {
-    nome: 'daniel Silva',
-    mensagem: 'Márcia diz: bom dia, como posso ajuda...',
-    nome2: 'Márcia',
-    imagem: 'boneco.jfif',
-    tempo: 'Há 30 minutos'
-},
-{
-    nome: 'Bruno Adorno',
-    mensagem: 'Bom dia, gostaria de saber quant...',
-    nome2: 'Jovsi',
-    imagem: 'boneco.jfif',
-    tempo: 'Há 30 minutos'
+    imagem: "./img/boneco.jfif",
+    nome: "jerome Bueno",
+    mensagem: "posso realizar o pagamento por...",
+    nome2: "João Paulo",
+    notificacao: "1",
+    tempo: "30 minutos"
 }
 ]
 
-function criarContatos (contatos) {
-    const container = document.getElementById('linhacontainer')
+function criarCards(perfis) {
+    const container = document.getElementById('linhamensagens')
 
     const card = document.createElement('div')
     card.classList.add('card')
 
     const imagem = document.createElement('img')
-    imagem.src = `./img/${contato.imagem}`
-    imagem.alt = contato.nome
+    imagem.src = `./img/${perfis.imagem}`
+    imagem.alt = perfis.nome
 
     const textos = document.createElement('div')
     textos.classList.add('textos')
 
-    const
+    const principal = document.createElement('div')
+    principal.classList.add('principal')
+
+    const nome = document.createElement('h2')
+    nome.textContent = perfis.nome
+
+    const div = document.createElement('div')
+
+    const p = document.createElement('p')
+    p.textContent = perfis.notificacao
+    
+    const tempo = document.createElement('span')
+    tempo.textContent = perfis.tempo
+
+    const mensagem = document.createElement('p')
+    mensagem.classList.add('mensagem')
+    mensagem.textContent = perfis.mensagem
+
+    const nome2 = document.createElement('div')
+    nome2.classList.add('nome2')
+    nome2.textContent = perfis.nome2
+
+    div.appendChild(p)
+    principal.replaceChildren(nome, div, tempo)
+    textos.replaceChildren(principal, mensagem, nome2)
+    card.replaceChildren(imagem, textos)
+
+    container.appendChild(card)
+
+
 }
+
+perfis.forEach(criarCards)
