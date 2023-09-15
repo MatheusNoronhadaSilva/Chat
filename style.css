@@ -1,6 +1,6 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -11,65 +11,51 @@ body{
     width: 100vw;
 }
 
-.linhacontainer{
-    height: 100vh;
+.linhamensagens{
+    background-color: darksalmon;
+    border-radius: 16px;
+    height: 80vh;
+    width: 28vw;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
     gap: 16px;
-    background-color: darksalmon;
     box-shadow: 0px 0px 10px 1px black;
+    padding: 10px;
 }
 
-.card{
-    width: 30vw;
-    height: 11vh;
+.card {
+    width: 100%;
+    height: 10%;
     background-color: bisque;
+    border-radius: 16px;
     display: flex;
-    border: 2px black solid;
-    border-radius: 8px;
-    padding-top: 10px;
-    margin: 0px 40px 0px 40px;
+    border: 2px solid black;
+    padding: 5px;
+    gap: 1vw;
 }
-
 .principal{
     display: flex;
+    gap: 4vw;
 }
-
-.principal h2{
-    padding-right: 10px;
-}
-
-.principal span{
-    padding-left: 200px;
-}
-
 .principal div{
     background-color: crimson;
-    width: 25px;
-    height: 25px;
+    width: 1.3vw;
+    height: 2vh;
     border-radius: 50%;
     text-align: center;
-    padding-top: 4px;
+    margin-top: .3vh;
     color: white;
 }
-.mensagem {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    font-size: 20px;
-}
-
-.card img{
-    height: 90%;
-    border-radius: 50%;
-    padding: 0px 5px 10px 5px ;
-}
-
 .nome2 {
     background-color: lightskyblue;
     border-radius: 10px;
-    width: 120px;
-    height: 30px;
+    width: 5vw;
+    height: 2vh;
     text-align: center;
-    padding: 5px
+    position: relative;
+    top: 1vh;
+}
+.card img{
+    height: 90%;
+    border-radius: 50%;
 }
