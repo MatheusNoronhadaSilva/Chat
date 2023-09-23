@@ -2,7 +2,7 @@
 
 const perfis = [
 {
-    imagem: "./img/boneco.jfif",
+    imagem: "boneco.jfif",
     nome: "jerome Bueno",
     mensagem: "posso realizar o pagamento por...",
     nome2: "João Paulo",
@@ -10,7 +10,7 @@ const perfis = [
     tempo: "30 minutos"
 },
 {
-    imagem: "./img/boneco.jfif",
+    imagem: "boneco.jfif",
     nome: "jerome Bueno",
     mensagem: "posso realizar o pagamento por...",
     nome2: "João Paulo",
