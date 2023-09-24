@@ -81,22 +81,6 @@ const perfis = [
     notificacao: "1",
     tempo: "30 minutos"
 },
-{
-    imagem: "boneco.jfif",
-    nome: "jerome Bueno",
-    mensagem: "posso realizar o pagamento por...",
-    nome2: "João Paulo",
-    notificacao: "1",
-    tempo: "30 minutos"
-},
-{
-    imagem: "boneco.jfif",
-    nome: "jerome Bueno",
-    mensagem: "posso realizar o pagamento por...",
-    nome2: "João Paulo",
-    notificacao: "1",
-    tempo: "30 minutos"
-},
 ]
 
 function criarCards(perfis) {
